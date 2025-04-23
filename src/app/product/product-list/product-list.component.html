@@ -2,5 +2,5 @@
 
 <div id="divContainer">
   <button *ngFor="let prod of products" (click)="this.selectProduct(prod.id)"> {{ prod.name }}</button>
-  <div> selectedProduct: {{selectedProduct}} </div>
+  <div> selectedProduct: {{selectedProductName}} </div>
 </div>
