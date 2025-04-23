@@ -5,12 +5,12 @@ import {ProductListComponent} from '../product-list/product-list.component';
 import {ProductDetailComponent} from '../product-detail/product-detail.component';
 
 @Component({
-  selector: 'product-section-rxjs',
+  selector: 'product-section-signals',
   imports: [ReactiveFormsModule, ProductListComponent, ProductDetailComponent],
   templateUrl: './product-section.component.html',
   styleUrl: './product-section.component.css'
 })
-export class ProductSectionRxjsComponent {
+export class ProductSectionSignalsComponent {
   @ViewChild('divContainer')
   containerChild!: ElementRef<HTMLElement>;
 

@@ -1,0 +1,6 @@
+<h1>products (signals)</h1>
+
+<div id="divContainer">
+  <button *ngFor="let prod of products" (click)="this.selectProduct(prod.id)"> {{ prod.name }}</button>
+  <div> selectedProduct: {{selectedProductName()}} </div>
+</div>
