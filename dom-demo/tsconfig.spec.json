@@ -3,13 +3,18 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": []
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "files": [
-    "src/main.ts"
+    "src/setup.jest.ts",
+    "polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "product-signals/src/**/*.spec.ts",
+    "product-signals/src/**/*.d.ts"
   ]
 }
